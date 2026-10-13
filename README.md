@@ -2,7 +2,7 @@
 
 Natural-language analytics dashboard for the **Global Terrorism Trends and Analysis Center (GTTAC)** GRID database. Ask questions in plain English — the app converts them to safe SQL, runs them against a PostgreSQL database, and visualises the results with interactive charts and geospatial maps.
 
-**Live demo:** [gridflow-kappa.vercel.app](https://gridflow-kappa.vercel.app)
+**Live demo:** [gridflow-kappa.vercel.app](https://gttac-insight.vercel.app/)
 
 ---
 
