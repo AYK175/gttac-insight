@@ -29,10 +29,13 @@ from gttac_insight.text_to_sql import generate_sql
 
 app = FastAPI(title="GTTAC Insight API", version="0.1.0")
 
-# Local-dev friendly; lock down in production.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://gttac-insight.vercel.app",
+        "http://localhost:3000",
+    ],
+    allow_origin_regex=r"https://gttac-insight-.*\.vercel\.app",
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
